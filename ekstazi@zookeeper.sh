@@ -14,8 +14,8 @@ sed -i '/<\/project>/i <taskdef uri="antlib:org.ekstazi.ant" resource="org/eksta
 </taskdef>' build.xml
 sed -i '/<junit*/i <ekstazi:select>' build.xml
 sed -i '/<\/junit>/a </ekstazi:select>' build.xml
-ant -lib org.ekstazi.ant-4.5.2.jar -lib org.ekstazi.core-4.5.2.jar test >> output${rev1}.txt
-ant -lib org.ekstazi.ant-4.5.2.jar -lib org.ekstazi.core-4.5.2.jar test >> output${rev1}again.txt
+ant test >> output${rev1}.txt
+ant test >> output${rev1}again.txt
 echo "Test run for ${rev1}:"
 grep -c "[junit]" output${rev1}.txt
 echo "Test run for ${rev1} again:"
