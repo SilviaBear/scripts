@@ -10,7 +10,7 @@
 #./research/state-capture/diaper-junit/scripts_bash/diaperize.sh research/state-capture/diaper-junit/scripts_bash/projectsList
 cd ~
 cd projects
-for file in `find -name LOG_abba`
+for file in `find -name LOG_bbaa`
 do
 	echo ${file%/*}
 	echo -n "true: "
