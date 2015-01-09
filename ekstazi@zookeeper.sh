@@ -28,10 +28,10 @@ insert
 ant test >> output${rev2}.txt
 wait
 echo "Result for ${rev1}:"
-grep -c "[junit]" output${rev1}.txt
+grep -c "\[junit]" output${rev1}.txt
 echo "Result for ${rev1} again:"
-grep -c "[junit]" output${rev1}again.txt
+grep -c "\[junit]" output${rev1}again.txt
 echo "Result for ${rev2}:"
-grep -c "[junit]" output${rev2}.txt
+grep -c "\[junit]" output${rev2}.txt
 
 
