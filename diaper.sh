@@ -1,16 +1,18 @@
 #!/bin/bash
-#cd ~
-#wget http://mir.cs.illinois.edu/gyori/sw/ed48904-diaper-junit.zip
-#unzip ed48904*
+cd ~
+rm -rf research
+wget http://mir.cs.illinois.edu/gyori/sw/ed48904-diaper-junit.zip
+unzip ed48904*
 cd ~/research
 cd *
 cd *
 ./run.sh
 cd ~
+cd projects
 #./research/state-capture/diaper-junit/scripts_bash/diaperize.sh research/state-capture/diaper-junit/scripts_bash/4projects >> badresult.txt
 #wait
 #cd projects
-./research/state-capture/diaper-junit/scripts_bash/diaperize.sh research/state-capture/diaper-junit/scripts_bash/goodguy >>goodguy.txt
+/home/silvia/research/state-capture/diaper-junit/scripts_bash/diaperize.sh ~/4projects
 wait
 cd ~
 cd projects
